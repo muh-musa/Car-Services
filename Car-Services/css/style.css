@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap");
+
+:root {
+  --font-family: "Poppins", sans-serif;
+  --blacky-color: #211f20;
+  --black-color: #000;
+  --white-color: #fff;
+  --red-danger: #dc3545;
+  --red-color: #e91c25;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 16px;
+  color: var(--blacky-color);
+  background-color: var(--white-color);
+}
+/* Start Naavbar */
+.navbar {
+  background-color: var(--blacky-color);
+  opacity: 0.9;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: var(--white-color);
+}
+
+span {
+  color: var(--red-danger);
+}
+
+.navbar-brand:hover {
+  color: var(--red-danger);
+}
+
+.navbar .navbar-nav .nav-link {
+  color: var(--white-color);
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+  color: var(--red-danger);
+}
+
+.navbar .navbar-toggler {
+  color: var(--white-color);
+  font-size: 20px;
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+/* End Naavbar */
+/* Start Hero */
+.hero {
+  background-image: linear-gradient(
+      rgba(33, 31, 32, 0.7),
+      rgba(33, 31, 32, 0.8)
+    ),
+    url(/image/oil.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  min-height: 40rem;
+  padding-top: 12rem;
+  padding-bottom: 0;
+}
+/* End Hero */
+/* Start Featured */
+.featured .icon-square {
+  height: 50px;
+}
+
+.featured .icon-square svg {
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.featured .icon-square .icons {
+  color: var(--red-danger);
+}
+
+.featured .title h2 {
+  color: var(---blacky-color);
+}
+
+.featured p {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+}
+
+.divider {
+  max-width: 5rem;
+  margin: 1rem auto;
+  background-color: var(--red-danger);
+  opacity: 1;
+}
+/* End Featured */
+/* Start Our work */
+.our-work p {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+}
+
+.zoom-effect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  cursor: default;
+}
+
+.zoom-effect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.8s linear;
+  transition: all 0.8s linear;
+}
+
+.zoom-effect:hover img {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+/* End Our work */
+/* Start Testimonial */
+.slider .divider {
+  background-color: var(--white-color);
+}
+
+.slider p {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+}
+
+.user-photo {
+  width: 120px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+/* End Testimonial */
+/* Start Service */
+.service .icons {
+  color: var(--red-danger);
+}
+
+.service .option hr {
+  margin: 0.2rem 0;
+  opacity: 0.15;
+}
+.service .divider {
+  margin: 0.5rem;
+  background-color: var(--red-danger);
+}
+/* End Service */
+/* Start Blog */
+.blog p {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+}
+/* End Blog */
+/* Start Newsletter */
+.newsletter {
+  background-color: var(--red-danger);
+  padding: 30px 0px;
+  text-align: center;
+  color: var(--white-color);
+}
+
+.newsletter h3 {
+  font-size: 25px;
+  font-weight: 400;
+  color: var(--white-color);
+}
+
+.newsletter p {
+  font-size: 15px;
+}
+
+.newsletter form {
+  background-color: var(--white-color);
+  padding: 10px 10px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.newsletter form input[type="email"] {
+  border: 0;
+  padding: 8px 8px;
+  width: calc(100% - 100px);
+}
+
+.newsletter form input[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: -1px;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background-color: var(--blacky-color);
+  color: var(--white-color);
+  border: 2px solid var(--white-color);
+  border-radius: 5px;
+}
+
+.newsletter form input[type="submit"]:hover {
+  background-color: var(--red-danger);
+}
+/* End Newsletter */
+/* Start Footer */
+.footer {
+  background-color: var(--blacky-color);
+  background-size: cover;
+  background-position: center;
+}
+
+.footer .social-icons a {
+  color: var(--white-color);
+  text-decoration: none !important;
+}
+
+.footer .social-icons a:hover {
+  color: var(--red-danger);
+}
+
+.footer .copy-right {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+.footer .copy-right a {
+  color: var(--white-color);
+  text-decoration: none !important;
+}
+
+.footer .copy-right a:hover {
+  color: var(--red-danger);
+}
+
+.link a {
+  text-decoration: none !important;
+}
+
+.link .hover:hover {
+  color: var(--red-danger) !important;
+}
+/* End Footer */
